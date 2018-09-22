@@ -8,6 +8,11 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "This is a project to learn data structures in Java" );
+        Human tom = new Human("Ajinkya", 26, 180, "black");
+        tom.speak();
+        tom.walk();
+        tom.eat();
+        tom.work();
+        System.out.println(tom); // this will call toString method on the object
     }
 }
