@@ -19,5 +19,11 @@ public class App
         animal.eat();
         animal.sleep();
         System.out.println(animal);
+        
+        Bird bird = new Bird(2, "Female", 20);
+        bird.fly();
+        
+        Fish fish = new Fish(1, "Female", 3);
+        fish.swim();
     }
 }
