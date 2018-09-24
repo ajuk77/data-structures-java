@@ -36,6 +36,20 @@ public class SinglyLinkedList {
 			System.out.print(temp.getData() + " -> ");
 			temp = temp.getNext();
 		}
+		System.out.println();
+	}
+	
+	public void insertLast(int data) {
+		ListNode temp = head;
+		ListNode newNode = new ListNode(data);
+		while(temp.getNext() != null) {
+			temp = temp.getNext();
+		}
+		temp.setNext(newNode);
+	}
+	
+	public int getLength() {
+		return length;
 	}
 
 }

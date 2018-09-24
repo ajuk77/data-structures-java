@@ -6,8 +6,10 @@ public class App {
 		SinglyLinkedList linkedList = new SinglyLinkedList();
 		linkedList.insertAtBegin(100);
 		linkedList.insertAtBegin(50);
+		linkedList.insertLast(300);
 		
 		linkedList.displayList();
+		System.out.println("\nLength of the list: "+linkedList.getLength());
 	}
 
 }
