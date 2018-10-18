@@ -1,4 +1,4 @@
-package com.cs.ajinkya.data_structures.strings;
+package com.cs.ajinkya.data_structures.stringsandarray;
 
 import java.util.Arrays;
 

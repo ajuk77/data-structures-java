@@ -1,4 +1,4 @@
-package com.cs.ajinkya.data_structures.strings;
+package com.cs.ajinkya.data_structures.stringsandarray;
 /*
  * Hint: https://www.geeksforgeeks.org/reverse-an-array-without-affecting-special-characters/
  * 
