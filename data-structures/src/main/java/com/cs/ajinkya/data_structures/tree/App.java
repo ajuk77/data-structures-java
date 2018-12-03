@@ -11,6 +11,50 @@ public class App {
 
 	}
 
+	public static BinaryTreeNode getBinarySearchTree() {
+		List<Integer> treeNodes = new ArrayList<Integer>();
+		treeNodes.add(5);
+		treeNodes.add(2);
+		treeNodes.add(3);
+		treeNodes.add(4);
+		treeNodes.add(1);
+		treeNodes.add(6);
+		treeNodes.add(7);
+
+		BinaryTreeNode root = null;
+
+		for (int data : treeNodes) {
+			root = createBST(root, data);
+		}
+		return root;
+
+	}
+
+	public static BinaryTreeNode createBST(BinaryTreeNode root, int data) {
+		if (root == null) {
+			root = new BinaryTreeNode(data);
+		} else {
+			insertHelper(root, data);
+		}
+		return root;
+	}
+
+	private static void insertHelper(BinaryTreeNode root, int data) {
+		if (root.data >= data) {
+			if (root.left == null) {
+				root.left = new BinaryTreeNode(data);
+			} else {
+				insertHelper(root.left, data);
+			}
+		} else {
+			if (root.right == null) {
+				root.right = new BinaryTreeNode(data);
+			} else {
+				insertHelper(root.right, data);
+			}
+		}
+	}
+
 	public static BinaryTreeNode getTree() {
 		List<Integer> treeNodes = new ArrayList<Integer>();
 		treeNodes.add(1);

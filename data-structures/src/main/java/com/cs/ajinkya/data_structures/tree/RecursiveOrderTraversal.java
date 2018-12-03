@@ -3,7 +3,7 @@ package com.cs.ajinkya.data_structures.tree;
 public class RecursiveOrderTraversal {
 	
 	public static void main(String[] args) {
-		BinaryTreeNode root = App.getTree();
+		BinaryTreeNode root = App.getBinarySearchTree();
 		
 		System.out.println("Preorder traversal :");
 		preorder(root);
